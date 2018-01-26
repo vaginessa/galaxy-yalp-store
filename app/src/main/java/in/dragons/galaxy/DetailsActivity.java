@@ -62,7 +62,7 @@ public class DetailsActivity extends YalpStoreActivity implements NavigationView
 
         GetAndRedrawDetailsTask task = new GetAndRedrawDetailsTask(this);
         task.setPackageName(packageName);
-        task.setProgressIndicator(findViewById(R.id.progress));
+        //task.setProgressIndicator(findViewById(R.id.progress));
         task.execute();
     }
 
