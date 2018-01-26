@@ -238,4 +238,6 @@
     <string name="warn_app_purchase">App purchase is not available yet !</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_myapps">My Apps</string>
+    <string name="nav_update">Updates</string>
 </resources>

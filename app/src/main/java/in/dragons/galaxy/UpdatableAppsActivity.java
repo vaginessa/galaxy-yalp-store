@@ -22,6 +22,7 @@ public class UpdatableAppsActivity extends AppListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        bottomsUp(1);
         setTitle(getString(R.string.activity_title_updates_only));
         onNewIntent(getIntent());
     }

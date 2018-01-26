@@ -22,25 +22,9 @@ public class InstalledAppsActivity extends AppListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        bottomsUp(0);
         ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
         setTitle(R.string.activity_title_updates_and_other_apps);
-        Button button =(Button) findViewById(R.id.main_button);
-        TextView textView = (TextView) findViewById(R.id.main_button_txt);
-        CardView cardView = (CardView) findViewById(R.id.list_card);
-        button.setEnabled(true);
-        textView.setEnabled(true);
-        button.setVisibility(View.VISIBLE);
-        textView.setVisibility(View.VISIBLE);
-        cardView.setVisibility(View.VISIBLE);
-        button.setText(R.string.list_check_updates);
-        textView.setText(R.string.list_check_updates_txt);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), UpdatableAppsActivity.class));
-
-            }
-        });
     }
 
     @Override

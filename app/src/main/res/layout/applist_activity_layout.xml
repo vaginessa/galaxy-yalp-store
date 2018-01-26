@@ -14,6 +14,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="6dp"
+                android:layout_marginBottom="56dp"
                 android:background="@color/lightgray">
 
                 <android.support.v7.widget.CardView
@@ -99,6 +100,23 @@
                             android:gravity="center"
                             android:textAppearance="?android:attr/textAppearanceLarge" />
                     </RelativeLayout>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:tint="@color/white"
+                        android:backgroundTint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_search"
+                        app:useCompatPadding="true"/>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
